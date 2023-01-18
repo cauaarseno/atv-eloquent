@@ -21,9 +21,9 @@ class ClientController extends Controller
 
     public function show()
     {
+        $client = Client::all();
 
-
-        return response()->json_decode($client);
+        return response()->json($client);
         
     }
 }
