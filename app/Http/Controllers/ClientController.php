@@ -27,9 +27,9 @@ class ClientController extends Controller
         
     }
 
-    public function name($client)
+    public function name($name)
     {
-        $nome = Client::find($client);
+        $nome = Client::where('name')->get();
 
         return response()->json($nome);
     }
