@@ -21,13 +21,7 @@ class ClientController extends Controller
 
     public function show()
     {
-        $client = Client::create([
-            'name' => $request->name,
-            'email' => $request->email,
-            'phone' => $request->phone,
-            'id_number' => $request->id_number
-        ]);
-
-        return response()->json($client);
+        
+        return response()->json($client->client);
     }
 }
