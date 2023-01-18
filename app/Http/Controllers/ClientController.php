@@ -23,7 +23,7 @@ class ClientController extends Controller
     {
         $cliente = Client::find($client);
 
-        return response()->json($client);
+        return response()->json($cliente);
         
     }
 }
