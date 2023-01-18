@@ -19,7 +19,7 @@ class ClientController extends Controller
         return response()->json($client);
     }
 
-    public function show()
+    public function show(Request $request)
     {
         $client = Client::show([
             'name' => $request->name,
