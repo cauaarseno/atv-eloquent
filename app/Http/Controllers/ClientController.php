@@ -19,14 +19,9 @@ class ClientController extends Controller
         return response()->json($client);
     }
 
-    public function show(Request $request)
+    public function show()
     {
-        $client = Client::show([
-            'name' => $request->name,
-            'email' => $request->email,
-            'phone' => $request->phone,
-            'id_number' => $request->id_number
-        ]);
+        $client = Client::all($client);
 
         return response()->json($client);
         
