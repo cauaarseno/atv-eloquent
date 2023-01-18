@@ -27,7 +27,7 @@ class ClientController extends Controller
         
     }
 
-    public function name($name)
+    public function name($client)
     {
         $nome = Client::find($client);
 
