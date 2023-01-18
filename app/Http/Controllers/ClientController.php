@@ -22,6 +22,6 @@ class ClientController extends Controller
     public function show()
     {
         
-        return response('client')->json($client);
+        return json($client);
     }
 }
