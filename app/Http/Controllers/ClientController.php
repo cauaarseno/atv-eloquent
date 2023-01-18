@@ -23,7 +23,7 @@ class ClientController extends Controller
     {
         $client = Client::all();
 
-        return Response::json($client);
+        return response()->json($client,200);
         
     }
 }
