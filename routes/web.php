@@ -17,3 +17,4 @@ use App\Http\Controllers\ClientController;
 Route::post('/clients/store', [ClientController::class, 'store']);
 Route::get('/clients/show/{client}', [ClientController::class, 'show']);
 Route::get('/clients/name/{name}', [ClientController::class, 'name']);
+Route::get('/clients/search/{text}', [ClientController::class, 'text']);
