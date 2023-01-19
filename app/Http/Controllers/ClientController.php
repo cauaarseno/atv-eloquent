@@ -29,8 +29,8 @@ class ClientController extends Controller
 
     public function name($name)
     {
-        $nome = Client::where($name)->get();
+        $info = Client::select(['id', 'name' ,'email','id_number'])->where('name', '=' , $name)->first();
 
-        return response()->json($nome);
+        return response()->json($info);
     }
 }
